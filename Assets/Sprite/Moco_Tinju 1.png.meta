@@ -1,0 +1,481 @@
+fileFormatVersion: 2
+guid: 79647286e43bf39418be7b0aa15b2640
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 373723131058648846
+    second: Moco_Tinju_0
+  - first:
+      213: 4306509022108343243
+    second: Moco_Tinju_1
+  - first:
+      213: 9013827728382132776
+    second: Moco_Tinju_2
+  - first:
+      213: 3604622734214914971
+    second: Moco_Tinju_3
+  - first:
+      213: 8976947485275284899
+    second: Moco_Tinju_4
+  - first:
+      213: 1560178518566713868
+    second: Moco_Tinju_5
+  - first:
+      213: -5797927580189073043
+    second: Moco_Tinju_6
+  - first:
+      213: 8614678069891757594
+    second: Moco_Tinju_7
+  - first:
+      213: 8858317956358138936
+    second: Moco_Tinju_8
+  - first:
+      213: 6208310162297257190
+    second: Moco_Tinju_9
+  - first:
+      213: 8064400572199625026
+    second: Moco_Tinju_10
+  - first:
+      213: 7851812169057984744
+    second: Moco_Tinju_11
+  - first:
+      213: -7641874197279961224
+    second: Moco_Tinju_12
+  - first:
+      213: 8981855524240444853
+    second: Moco_Tinju_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Moco_Tinju_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 10591
+        width: 1043
+        height: 1914
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e07f817253bbf2500800000000000000
+      internalID: 373723131058648846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moco_Tinju_1
+      rect:
+        serializedVersion: 2
+        x: 5769
+        y: 8455
+        width: 1135
+        height: 1643
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcb58c4832bc3cb30800000000000000
+      internalID: 4306509022108343243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moco_Tinju_2
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 6355
+        width: 1041
+        height: 1652
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82288c8cf8c871d70800000000000000
+      internalID: 9013827728382132776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moco_Tinju_3
+      rect:
+        serializedVersion: 2
+        x: 1540
+        y: 6362
+        width: 1041
+        height: 1644
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b936d265741360230800000000000000
+      internalID: 3604622734214914971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moco_Tinju_4
+      rect:
+        serializedVersion: 2
+        x: 2792
+        y: 6410
+        width: 1348
+        height: 1597
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a56b2b0d26849c70800000000000000
+      internalID: 8976947485275284899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moco_Tinju_5
+      rect:
+        serializedVersion: 2
+        x: 4215
+        y: 6387
+        width: 1327
+        height: 1629
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0a3d51b81ed6a510800000000000000
+      internalID: 1560178518566713868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moco_Tinju_6
+      rect:
+        serializedVersion: 2
+        x: 5953
+        y: 7204
+        width: 195
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d61e365a59f998fa0800000000000000
+      internalID: -5797927580189073043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moco_Tinju_7
+      rect:
+        serializedVersion: 2
+        x: 6164
+        y: 7379
+        width: 67
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a16fe32ef0c7d8770800000000000000
+      internalID: 8614678069891757594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moco_Tinju_8
+      rect:
+        serializedVersion: 2
+        x: 6473
+        y: 7379
+        width: 67
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83ce0387f311fea70800000000000000
+      internalID: 8858317956358138936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moco_Tinju_9
+      rect:
+        serializedVersion: 2
+        x: 6164
+        y: 7204
+        width: 67
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ecfc271339582650800000000000000
+      internalID: 6208310162297257190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moco_Tinju_10
+      rect:
+        serializedVersion: 2
+        x: 6264
+        y: 7204
+        width: 174
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2416a68e7918aef60800000000000000
+      internalID: 8064400572199625026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moco_Tinju_11
+      rect:
+        serializedVersion: 2
+        x: 6446
+        y: 7140
+        width: 94
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e06acb219d37fc60800000000000000
+      internalID: 7851812169057984744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moco_Tinju_12
+      rect:
+        serializedVersion: 2
+        x: 6570
+        y: 7200
+        width: 175
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87f87ece7eb92f590800000000000000
+      internalID: -7641874197279961224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moco_Tinju_13
+      rect:
+        serializedVersion: 2
+        x: 7638
+        y: 0
+        width: 700
+        height: 1048
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bd4b3ae206f5ac70800000000000000
+      internalID: 8981855524240444853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Moco_Tinju_0: 373723131058648846
+      Moco_Tinju_1: 4306509022108343243
+      Moco_Tinju_10: 8064400572199625026
+      Moco_Tinju_11: 7851812169057984744
+      Moco_Tinju_12: -7641874197279961224
+      Moco_Tinju_13: 8981855524240444853
+      Moco_Tinju_2: 9013827728382132776
+      Moco_Tinju_3: 3604622734214914971
+      Moco_Tinju_4: 8976947485275284899
+      Moco_Tinju_5: 1560178518566713868
+      Moco_Tinju_6: -5797927580189073043
+      Moco_Tinju_7: 8614678069891757594
+      Moco_Tinju_8: 8858317956358138936
+      Moco_Tinju_9: 6208310162297257190
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

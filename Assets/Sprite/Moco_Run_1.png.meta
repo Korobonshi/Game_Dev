@@ -1,0 +1,950 @@
+fileFormatVersion: 2
+guid: a05d7d35d056b3548910bc6e88502ecc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3689396440090722779
+    second: Moco_Run_1_0
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Moco_Run_1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 10422
+        width: 1280
+        height: 2080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd1c237d38e533330800000000000000
+      internalID: 3689396440090722779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moco_Run_1_1
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 10422
+        width: 1280
+        height: 2080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16d5b4d5711aff141b579c34a239b6d1
+      internalID: -809620979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moco_Run_1_2
+      rect:
+        serializedVersion: 2
+        x: 2760
+        y: 10422
+        width: 1280
+        height: 2080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24079a72b23dd4d43b8386ed0c90e68e
+      internalID: -748466698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moco_Run_1_3
+      rect:
+        serializedVersion: 2
+        x: 4140
+        y: 10422
+        width: 1280
+        height: 2080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16cb99f9c370389439c9d72fff246c4a
+      internalID: -1353568951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moco_Run_1_4
+      rect:
+        serializedVersion: 2
+        x: 5520
+        y: 10422
+        width: 1280
+        height: 2080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c52fe761cd8b0d4f9519e098a306b93
+      internalID: 947049282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moco_Run_1_5
+      rect:
+        serializedVersion: 2
+        x: 6900
+        y: 10422
+        width: 1280
+        height: 2080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 578b3677a9be0914981d634ac51e2a79
+      internalID: -162802958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moco_Run_1_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8342
+        width: 1280
+        height: 2080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42a91285961c92347b154e20ea028dd5
+      internalID: 1620072824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moco_Run_1_7
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 8342
+        width: 1280
+        height: 2080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f99218f0607fc7e438ca6771fe990b04
+      internalID: -1984959355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moco_Run_1_8
+      rect:
+        serializedVersion: 2
+        x: 2760
+        y: 8342
+        width: 1280
+        height: 2080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1871e01e65e2ab845a698e1e4ceb699a
+      internalID: -2086433098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moco_Run_1_9
+      rect:
+        serializedVersion: 2
+        x: 4140
+        y: 8342
+        width: 1280
+        height: 2080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57ff1361de9c2614383180b2dc09ccd3
+      internalID: -1191311890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moco_Run_1_10
+      rect:
+        serializedVersion: 2
+        x: 5520
+        y: 8342
+        width: 1280
+        height: 2080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 819301c86c5aae5489c70e8e32c3514f
+      internalID: -1793544379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moco_Run_1_11
+      rect:
+        serializedVersion: 2
+        x: 6900
+        y: 8342
+        width: 1280
+        height: 2080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28f636637d8fe914d825528d68c99372
+      internalID: 1267755538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moco_Run_1_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6262
+        width: 1280
+        height: 2080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1e62731e711a8349b4cff79ffc53513
+      internalID: -431685816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moco_Run_1_13
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 6262
+        width: 1280
+        height: 2080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59d0547dbf7436c47986210dea9b3bd4
+      internalID: 444463071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moco_Run_1_14
+      rect:
+        serializedVersion: 2
+        x: 2760
+        y: 6262
+        width: 1280
+        height: 2080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a39bbaa8582d46f43b69f119998279e8
+      internalID: -1150339007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moco_Run_1_15
+      rect:
+        serializedVersion: 2
+        x: 4140
+        y: 6262
+        width: 1280
+        height: 2080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc519f4dc1d240b4f99bd276d06a7951
+      internalID: -488559138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moco_Run_1_16
+      rect:
+        serializedVersion: 2
+        x: 5520
+        y: 6262
+        width: 1280
+        height: 2080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 747663e792cb0c8429204d909b3ee37c
+      internalID: -775081343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moco_Run_1_17
+      rect:
+        serializedVersion: 2
+        x: 6900
+        y: 6262
+        width: 1280
+        height: 2080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67b76f7267ce0034abb7867a3d00490f
+      internalID: -2116092935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moco_Run_1_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4182
+        width: 1280
+        height: 2080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb1c85c72fa24d943b1fa2fb5957e744
+      internalID: -189929913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moco_Run_1_19
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 4182
+        width: 1280
+        height: 2080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d82f6d528082a14593c44df0733e579
+      internalID: -632227453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moco_Run_1_20
+      rect:
+        serializedVersion: 2
+        x: 2760
+        y: 4182
+        width: 1280
+        height: 2080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: deabb0655600481449b6d39c3b3ec066
+      internalID: 846429691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moco_Run_1_21
+      rect:
+        serializedVersion: 2
+        x: 4140
+        y: 4182
+        width: 1280
+        height: 2080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbf552a631235954095dce1f8b826920
+      internalID: 1245341522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moco_Run_1_22
+      rect:
+        serializedVersion: 2
+        x: 5520
+        y: 4182
+        width: 1280
+        height: 2080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b578fe5cc33521b409076c2838405619
+      internalID: 1752124136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moco_Run_1_23
+      rect:
+        serializedVersion: 2
+        x: 6900
+        y: 4182
+        width: 1280
+        height: 2080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63f4052f19e96ed4eaddf49650114f09
+      internalID: -1049734804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moco_Run_1_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2102
+        width: 1280
+        height: 2080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3e0e32c0a9df7f4caf6fc549253db25
+      internalID: -1399342948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moco_Run_1_25
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 2102
+        width: 1280
+        height: 2080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b44da0183ffc0b4580f7607a959ec92
+      internalID: 847952174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moco_Run_1_26
+      rect:
+        serializedVersion: 2
+        x: 2760
+        y: 2102
+        width: 1280
+        height: 2080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43be626d828dcc7429628f2c1ea4ab4b
+      internalID: 546876631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moco_Run_1_27
+      rect:
+        serializedVersion: 2
+        x: 4140
+        y: 2102
+        width: 1280
+        height: 2080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c4a1a442692a5d4292c92a4ad0e023f
+      internalID: 925517004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moco_Run_1_28
+      rect:
+        serializedVersion: 2
+        x: 5520
+        y: 2102
+        width: 1280
+        height: 2080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dca7b08789ca7f04492b205d0a6ca2c3
+      internalID: 1684839605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moco_Run_1_29
+      rect:
+        serializedVersion: 2
+        x: 6900
+        y: 2102
+        width: 1280
+        height: 2080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e154abb306c11b468f72fb8d81cd817
+      internalID: -143063161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moco_Run_1_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 22
+        width: 1280
+        height: 2080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d73db494795c17f488cd13e36065b17d
+      internalID: 947321440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moco_Run_1_31
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 22
+        width: 1280
+        height: 2080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f211432235b04b74893dc39625566fa4
+      internalID: -1845971174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moco_Run_1_32
+      rect:
+        serializedVersion: 2
+        x: 2760
+        y: 22
+        width: 1280
+        height: 2080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a2ced70170f278499c09eca1eb949a0
+      internalID: 1111158206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moco_Run_1_33
+      rect:
+        serializedVersion: 2
+        x: 4140
+        y: 22
+        width: 1280
+        height: 2080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3371e7c6cf29164fb84fd231b2bf5d4
+      internalID: 1092518989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moco_Run_1_34
+      rect:
+        serializedVersion: 2
+        x: 5520
+        y: 22
+        width: 1280
+        height: 2080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c4679f6c8918044eba87de1475596a8
+      internalID: 1102573291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Moco_Run_1_35
+      rect:
+        serializedVersion: 2
+        x: 6900
+        y: 22
+        width: 1280
+        height: 2080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d80b0823f1527046a5cebe85de7a265
+      internalID: -84988635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 811f9b66a14a0104c92f53f9da633761
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":1280.0,"y":2080.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":100.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Moco_Run_1_0: 3689396440090722779
+      Moco_Run_1_1: -809620979
+      Moco_Run_1_10: -1793544379
+      Moco_Run_1_11: 1267755538
+      Moco_Run_1_12: -431685816
+      Moco_Run_1_13: 444463071
+      Moco_Run_1_14: -1150339007
+      Moco_Run_1_15: -488559138
+      Moco_Run_1_16: -775081343
+      Moco_Run_1_17: -2116092935
+      Moco_Run_1_18: -189929913
+      Moco_Run_1_19: -632227453
+      Moco_Run_1_2: -748466698
+      Moco_Run_1_20: 846429691
+      Moco_Run_1_21: 1245341522
+      Moco_Run_1_22: 1752124136
+      Moco_Run_1_23: -1049734804
+      Moco_Run_1_24: -1399342948
+      Moco_Run_1_25: 847952174
+      Moco_Run_1_26: 546876631
+      Moco_Run_1_27: 925517004
+      Moco_Run_1_28: 1684839605
+      Moco_Run_1_29: -143063161
+      Moco_Run_1_3: -1353568951
+      Moco_Run_1_30: 947321440
+      Moco_Run_1_31: -1845971174
+      Moco_Run_1_32: 1111158206
+      Moco_Run_1_33: 1092518989
+      Moco_Run_1_34: 1102573291
+      Moco_Run_1_35: -84988635
+      Moco_Run_1_4: 947049282
+      Moco_Run_1_5: -162802958
+      Moco_Run_1_6: 1620072824
+      Moco_Run_1_7: -1984959355
+      Moco_Run_1_8: -2086433098
+      Moco_Run_1_9: -1191311890
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
