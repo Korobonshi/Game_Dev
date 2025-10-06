@@ -11,7 +11,7 @@ using UnityEngine;
 /// </summary>
 public class EnemyAI : Enemy
 {
-    public enum Difficulty { Easy, Medium, Hard }
+    public enum Difficulty { Easy, Medium, Hard, Impossible }
 
     [Header("Difficulty")]
     public Difficulty difficulty = Difficulty.Hard;
@@ -79,6 +79,14 @@ public class EnemyAI : Enemy
     public float stuckImproveMin = 0.15f;
     public bool  cancelClimbOnClearLOS = true;
 
+    [Header("Impossible Teleport")]
+    [Tooltip("Time between teleport attempts (seconds)")]
+    public float teleportCooldown = 5.0f;
+    [Tooltip("Preparation time before teleporting (seconds) - gives player time to dodge")]
+    public float teleportPrepTime = 0.5f;
+    [Tooltip("How often to update player's last known position (seconds)")]
+    public float playerTrackingRate = 0.1f;
+
     private Rigidbody2D rb;
     private bool isGrounded;
     private bool shouldJump;
@@ -97,6 +105,15 @@ public class EnemyAI : Enemy
     private float   nextReplanTime = 0f;
     private float   stuckTimer = 0f;
     private float   lastDistToWP = Mathf.Infinity;
+
+    // teleport state (Impossible difficulty)
+    private bool isTeleporting = false;
+    private bool isPreparingTeleport = false;
+    private float nextTeleportTime = 0f;
+    private float teleportPrepEndTime = 0f;
+    private Vector2 playerLastKnownPosition;
+    private float nextPlayerTrackTime = 0f;
+    private Vector2 teleportTargetPosition;
 
     // === DEBUG SCAN CACHE ===
     private readonly List<(Vector2 origin, Vector2 end, bool hit)> scanDebugLines = new();
@@ -149,8 +166,20 @@ public class EnemyAI : Enemy
                 jumpForce = Mathf.Max(jumpForce, 6.5f);
                 highPlatformDeltaY = Mathf.Max(highPlatformDeltaY, 2.5f);
                 break;
+            case Difficulty.Impossible:
+                // Same stats as Hard but with teleportation
+                chaseSpeed = Mathf.Max(chaseSpeed, 3.2f); // Slightly faster
+                attackCooldown = 0.65f; // Slightly more aggressive
+                frontCheckDist = 1.6f;
+                gapCheckDownDist = 2.4f;
+                overheadCheck = 3.2f;
+                jumpForce = Mathf.Max(jumpForce, 7f);
+                highPlatformDeltaY = Mathf.Max(highPlatformDeltaY, 2.5f);
+                // Initialize teleport timing
+                nextTeleportTime = Time.time + teleportCooldown;
+                nextPlayerTrackTime = Time.time + playerTrackingRate;
+                break;
         }
-        // jinakkan lompat default
         jumpHorizontalBias = Mathf.Clamp(jumpHorizontalBias, 0.3f, 0.6f);
         jumpVerticalScale  = Mathf.Clamp(jumpVerticalScale, 0.85f, 1.0f);
         jumpCooldown       = Mathf.Clamp(jumpCooldown, 0.25f, 0.5f);
@@ -176,24 +205,24 @@ public class EnemyAI : Enemy
         RaycastHit2D platformAbove = Physics2D.Raycast(origin, Vector2.up, overheadCheck, platformLayer);
         bool isPlayerAbove = (player.position.y - transform.position.y) > playerAboveThreshold;
 
-        // Gerak horizontal dasar
-        if (isGrounded && !climbing)
+        // Gerak horizontal dasar (disabled during teleport)
+        if (isGrounded && !climbing && !isTeleporting && !isPreparingTeleport)
             rb.linearVelocity = new Vector2(dir * chaseSpeed, rb.linearVelocity.y);
 
-        // Keputusan lompat kalem
+        // Keputusan lompat kalem (disabled during teleport)
         shouldJump = false;
-        if (isGrounded && !climbing && Time.time >= nextJumpTime)
+        if (isGrounded && !climbing && !isTeleporting && !isPreparingTeleport && Time.time >= nextJumpTime)
         {
             if (!gapAhead.collider && !groundInFront.collider) shouldJump = true;   // tepi/jurang
             else if (groundInFront.collider)                    shouldJump = true;   // dinding
             else if (isPlayerAbove && platformAbove.collider)   shouldJump = true;   // platform atas
         }
 
-        // Hard: trigger climb bila player jauh di atas
-        if (difficulty == Difficulty.Hard)
+        // Hard/Impossible: trigger climb bila player jauh di atas
+        if (difficulty == Difficulty.Hard || difficulty == Difficulty.Impossible)
         {
             float deltaY = player.position.y - transform.position.y;
-            if (deltaY >= highPlatformDeltaY && !climbing)
+            if (deltaY >= highPlatformDeltaY && !climbing && !isTeleporting)
             {
                 if (BuildClimbRoute())
                 {
@@ -206,7 +235,13 @@ public class EnemyAI : Enemy
             if (climbing) AdaptiveReplanChecks();
         }
 
-        if (climbing) FollowClimbRoute();
+        // Impossible: Handle teleportation mechanics
+        if (difficulty == Difficulty.Impossible)
+        {
+            HandleTeleportMechanics();
+        }
+
+        if (climbing && !isTeleporting) FollowClimbRoute();
 
         // Serang
         if (Vector2.Distance(transform.position, player.position) <= attackRange
@@ -222,7 +257,7 @@ public class EnemyAI : Enemy
 
     private void FixedUpdate()
     {
-        if (isGrounded && shouldJump && !climbing && Time.time >= nextJumpTime)
+        if (isGrounded && shouldJump && !climbing && !isTeleporting && !isPreparingTeleport && Time.time >= nextJumpTime)
         {
             shouldJump = false;
             float needDy = Mathf.Max(0f, player.position.y - transform.position.y);
@@ -569,6 +604,79 @@ public class EnemyAI : Enemy
         }
     }
 
+    // ===========================
+    // ===== TELEPORT MECHANICS ====
+    // ===========================
+    private void HandleTeleportMechanics()
+    {
+        if (!player) return;
+
+        // Track player position periodically
+        if (Time.time >= nextPlayerTrackTime)
+        {
+            playerLastKnownPosition = player.position;
+            nextPlayerTrackTime = Time.time + playerTrackingRate;
+        }
+
+        // Handle teleport preparation
+        if (isPreparingTeleport)
+        {
+            // Stop all movement during preparation
+            rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
+            
+            // Check if preparation time is over
+            if (Time.time >= teleportPrepEndTime)
+            {
+                ExecuteTeleport();
+            }
+            return;
+        }
+
+        // Check if it's time to start teleporting
+        if (!isTeleporting && !isPreparingTeleport && Time.time >= nextTeleportTime)
+        {
+            StartTeleportPreparation();
+        }
+    }
+
+    private void StartTeleportPreparation()
+    {
+        isPreparingTeleport = true;
+        teleportPrepEndTime = Time.time + teleportPrepTime;
+        teleportTargetPosition = playerLastKnownPosition;
+        
+        // Cancel current climbing if active
+        climbing = false;
+        
+        // Visual/audio feedback could go here
+        Debug.Log($"{name} is preparing to teleport to {teleportTargetPosition}!");
+    }
+
+    private void ExecuteTeleport()
+    {
+        // Teleport to the stored position
+        transform.position = teleportTargetPosition;
+        
+        // Reset states
+        isPreparingTeleport = false;
+        isTeleporting = true;
+        
+        // Brief post-teleport recovery
+        StartCoroutine(TeleportRecovery());
+        
+        // Set next teleport time
+        nextTeleportTime = Time.time + teleportCooldown;
+        
+        Debug.Log($"{name} teleported to {teleportTargetPosition}!");
+    }
+
+    private System.Collections.IEnumerator TeleportRecovery()
+    {
+        // Brief moment where enemy can't move after teleporting
+        yield return new WaitForSeconds(0.1f);
+        isTeleporting = false;
+    }
+
     // ======================
     // ===== ATTACK & DBG ===
     // ======================
@@ -630,6 +738,22 @@ public class EnemyAI : Enemy
                 Gizmos.DrawLine(line.origin, line.end);
                 Gizmos.DrawWireSphere(line.origin, 0.05f);
             }
+        }
+
+        // === GIZMOS: teleport visualization (Impossible difficulty) ===
+        if (difficulty == Difficulty.Impossible)
+        {
+            if (isPreparingTeleport)
+            {
+                Gizmos.color = Color.yellow;
+                Gizmos.DrawWireSphere(transform.position, 0.5f);
+                Gizmos.DrawLine(transform.position, teleportTargetPosition);
+                Gizmos.DrawWireSphere(teleportTargetPosition, 0.3f);
+            }
+            
+            // Show player last known position
+            Gizmos.color = Color.blue;
+            Gizmos.DrawWireCube(playerLastKnownPosition, Vector3.one * 0.2f);
         }
     }
 }

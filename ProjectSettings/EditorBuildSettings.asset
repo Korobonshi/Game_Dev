@@ -8,9 +8,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Main Menu.unity
     guid: 75025e9d6be7b574fa06279b99fc1d58
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Adit.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/Wena.unity
+    guid: 5d326be0999c3424da40188ec861096f
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 055ac99951219c443860dfb5bec2f312, type: 3}
   m_UseUCBPForAssetBundles: 0
